@@ -21,11 +21,11 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt-br">
-      <body className={poppins.className}>
-        <div>
+    <html lang="pt-br" className="scroll-smooth">
+      <body className={`${poppins.className} text-pretty antialiased`}>
+        <div className="flex flex-col min-h-screen">
           <Header />
-          <main>
+          <main className="flex flex-col flex-1">
             {children}
           </main>
           <footer></footer>
