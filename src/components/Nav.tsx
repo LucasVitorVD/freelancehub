@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { buttonVariants } from "@/components/ui/button"
 
 const navigationList = [
   {
@@ -21,13 +22,13 @@ const navigationList = [
 
 export default function Nav() {
   return (
-    <nav className="flex flex-col-reverse gap-6 md:flex-row md:items-center md:justify-center md:gap-12">
-      <ul className="flex flex-col gap-6 md:flex-row md:items-center">
+    <nav className="flex flex-col-reverse gap-6 lg:flex-row lg:items-center lg:justify-center lg:gap-12">
+      <ul className="flex flex-col gap-6 lg:flex-row lg:items-center">
         {navigationList.map((link, i) => (
           <li key={i}>
             <Link
               href={link.href}
-              className="text-primary hover:text-secondary hover:underline transition-all"
+              className="text-primary hover:text-secondary transition-all"
             >
               {link.text}
             </Link>
@@ -35,16 +36,16 @@ export default function Nav() {
         ))}
       </ul>
 
-      <div className="flex flex-col gap-4 border-b-2 pb-6 md:flex-row md:border-b-0 md:pb-0">
+      <div className="flex flex-col gap-4 border-b-2 pb-6 lg:flex-row lg:border-b-0 lg:pb-0">
         <Link
           href="#"
-          className="px-2 py-2 border border-primary hover:border-secondary rounded transition-all md:px-4"
+          className={buttonVariants({ variant: "outline" })}
         >
           Login
         </Link>
         <Link
           href="#"
-          className="bg-primary text-white px-2 py-2 rounded hover:bg-secondary transition-colors md:px-4"
+          className={buttonVariants({ variant: "default" })}
         >
           Cadastre-se
         </Link>
