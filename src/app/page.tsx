@@ -2,6 +2,8 @@ import Hero from "@/components/Hero";
 import PartnersCarousel from "@/components/PartnersCarousel";
 import DepoimentsList from "@/components/DepoimentsList";
 import FunctionalitiesList from "@/components/FunctionalitiesList";
+import { buttonVariants } from "@/components/ui/button"
+import Link from "next/link";
 
 export default function HomePage() {
   return (
@@ -27,6 +29,19 @@ export default function HomePage() {
           </p>
         </div>
         <FunctionalitiesList />
+      </section>
+      <section className="py-16">
+        <div className="container mx-auto text-center space-y-8">
+          <h3 className="text-3xl font-bold">
+            Pronto para transformar suas ideias em soluções incríveis?
+          </h3>
+          <p className="text-lg">
+            Cadastre-se agora e conecte-se com talentos de todo o mundo.
+          </p>
+          <Link className={`${buttonVariants({ variant: "secondary" })} py-6 px-8`} href="#">
+            Cadastre-se Gratuitamente
+          </Link>
+        </div>
       </section>
     </div>
   );
