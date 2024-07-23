@@ -1,6 +1,6 @@
 @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
+@tailwind components;
+@tailwind utilities;
 
   @layer base {
     :root {
@@ -48,13 +48,13 @@
       --primary: 210 40% 98%; /* #F5F5F5 */
       --primary-foreground: 221.4 100% 34.1%; /* #0D47A1 */
   
-      --secondary: 217.2 32.6% 17.5%; /* #1976D2 */
+      --secondary: 210.1 72.4% 45.3%; /* #1976D2 */
       --secondary-foreground: 210 40% 98%; /* #F5F5F5 */
   
       --muted: 217.2 32.6% 17.5%; /* #E0E0E0 */
       --muted-foreground: 215 20.2% 65.1%; /* #757575 */
   
-      --accent: 217.2 32.6% 17.5%; /* #FFB300 */
+      --accent: 44.3 100% 50.8%; /* #FFB300 */
       --accent-foreground: 210 40% 98%; /* #F5F5F5 */
   
       --destructive: 0 62.8% 30.6%;

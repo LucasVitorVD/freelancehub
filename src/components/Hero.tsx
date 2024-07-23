@@ -26,7 +26,7 @@ export default function Hero() {
 
         <Button
           variant="secondary"
-          className="mt-6 hover:bg-primary py-6 text-base"
+          className="mt-6 py-6 text-base"
         >
           Comece já!
         </Button>

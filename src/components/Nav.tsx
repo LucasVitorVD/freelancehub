@@ -8,15 +8,19 @@ const navigationList = [
   },
   {
     href: "#",
-    text: "Como funciona",
-  },
-  {
-    href: "#",
-    text: "Preços",
-  },
-  {
-    href: "#",
     text: "Sobre nós",
+  },
+  {
+    href: "#",
+    text: "Projetos",
+  },
+  {
+    href: "#",
+    text: "Freelancers",
+  },
+  {
+    href: "#",
+    text: "Contato",
   },
 ]
 

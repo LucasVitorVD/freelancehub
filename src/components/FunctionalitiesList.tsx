@@ -126,7 +126,7 @@ export default function FunctionalitiesList() {
           <CardHeader>
             <div className="flex items-center flex-col gap-3">
               <span className="p-2 rounded-full bg-black/25">
-                <LayoutDashboard className="text-black size-6" />
+                <LayoutDashboard className="text-black size-6 dark:text-white" />
               </span>
               <p className="text-md font-bold md:text-xl">
                 Dashboard de Projetos

@@ -1,12 +1,13 @@
 import { Instagram, Facebook, Twitter, Linkedin } from "lucide-react";
+import { ModeToggle } from "@/components/ModeToggle"
 
 export default function Footer() {
   return (
-    <footer className="py-8 border shadow">
+    <footer className="py-8 border-t shadow">
       <div className="container mx-auto px-4 space-y-8">
         <div className="flex items-center justify-between">
           <h4 className="text-2xl font-bold text-primary">FreelanceHub</h4>
-          <div className="flex mt-2 space-x-4">
+          <div className="flex items-center mt-2 space-x-4">
             <a href="https://www.facebook.com" className="hover:text-primary">
               <Facebook className="size-6" />
             </a>
@@ -19,6 +20,7 @@ export default function Footer() {
             <a href="https://www.instagram.com" className="hover:text-primary">
               <Instagram className="size-6" />
             </a>
+            <ModeToggle />
           </div>
         </div>
 
